@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortFolio</title>
     <link rel="stylesheet" href="style.css">
+    <title>Temperature Converter</title>
 </head>
+
 <body>
-    <div class="hr">
-        <nav>
-            <img src="logo.jpg" alt="logo">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="del">
-            <h1>Hi! I'm <span>Yashasvi Saxena</span></h1>
-            <p>
-                This is my personal portfolio website.
-                <br>This website consists of my skills and projects.
-            </p>
-            <a href="#">Download CV</a>
-        </div>
+    <div class="container">
+        <form id="cal" onsubmit="calculateTemp(); return false">
+            <label for="temp">Enter the temperature: </label>
+            <br>
+            <input type="number" name="temp" id="temp" value="0">
+            <select name="diff" id="temp_diff">
+                <option value="cel">&#176;Celsius</option>
+                <option value="fah">&#176;Fahrenheit</option>
+            </select>
+            <br>
+            <input type="submit" name="temp" id="submit">
+            <br>
+            <span id="result"></span>
+        </form>
     </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
